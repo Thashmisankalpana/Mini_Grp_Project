@@ -45,13 +45,13 @@
 
         .card h3 {
             font-family: calibri;
-            font-size: 20px;
+            font-size: 24px; 
             margin-bottom: 10px;
         }
 
         .card p {
             font-family: calibri;
-            font-size: 16px;
+            font-size: 18px;
             color: #666;
         }
 
@@ -64,7 +64,7 @@
         }
 
         .card .car-price {
-            font-size: 18px;
+            font-size: 22px; 
             font-weight: bold;
             color: #333;
             margin-bottom: 10px;
@@ -81,10 +81,26 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Remove underline from links within cards */
-        .card a {
-            text-decoration: none; /* Remove underline */
-            color: inherit; /* Inherit text color */
+        .buy-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 12px 24px; 
+            text-align: center;
+            text-decoration: none;
+            display: block; /* Change to block for centering */
+            font-size: 18px;
+            margin: 10px auto; /* Center the button horizontally */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 16px; /* Increased font size */
+            color: #666;
         }
 
         /* Additional styling for responsiveness */
@@ -106,7 +122,7 @@
     
     <!-- Header -->
     <header>
-        <h3 style="font-family:calibri; font-size:60px;">Our Vehicles</h3>
+        <h3 style="font-family:calibri; font-size:64px;">Our Vehicles</h3> 
     </header>
     
     <!-- Main Content -->
@@ -114,45 +130,55 @@
         <!-- Car Details -->
         <div class="car-details">
             <!-- Example card for each vehicle -->
-            <a href="car-details.html" class="card">
+            <div class="card">
                 <div class="car-price" style="color:red;">Rs.3,000,000</div>
-                <img class="car-image" src="../images/honda-n-wgn.jpg" alt="Honda N-WGN">
                 <h3>Honda N-WGN</h3>
                 <p>Year: 2018</p>
                 <p>Mileage: 20,000 km</p>
                 <p>Body Type: Wagon</p>
                 <p>Fuel Type: Petrol</p>
+                <p class="car-location">Location: Kandy</p> 
                 <div class="additional-images">
                     <img src="../images/searchhond1.jpg" alt="Additional Image 1">
                     <img src="../images/searchhond2.jpg" alt="Additional Image 2">
                     <img src="../images/searchhond3.jpg" alt="Additional Image 3">
                 </div>
-            </a>
+                <a href="car1.html" class="buy-button">More Details</a>
+                <div class="card-footer">
+                    <span>Posted: 2024-06-18</span>
+                    <span style="color:green;">Verified</span>
+                </div>
+            </div>
 
-            <a href="car-details.html" class="card">
+            <div class="card">
                 <div class="car-price" style="color:red;">Rs.2,000,000</div>
-                <img class="car-image" src="../images/nissan-sunny-n17.jpg" alt="Nissan Sunny N17">
                 <h3>Nissan Sunny N17</h3>
                 <p>Year: 2010</p>
                 <p>Mileage: 140,000 km</p>
                 <p>Body Type: Sedan</p>
                 <p>Fuel Type: Petrol</p>
+                <p class="car-location">Location: Colombo</p> 
                 <div class="additional-images">
                     <img src="../images/nissansear1.jpg" alt="Additional Image 1">
                     <img src="../images/nissansear2.jpg" alt="Additional Image 2">
                     <img src="../images/nissansear3.jpg" alt="Additional Image 3">
                 </div>
-            </a>
+                <a href="car2.html" class="buy-button">More Details</a>
+                <div class="card-footer">
+                    <span>Posted: 2024-06-18</span>
+                    <span style="color:green;">Verified</span>
+                </div>
+            </div>
 
             <!-- Add more cards as needed -->
         </div>
     </div>
-
+</div>
     <!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <section id="contact-information">
-                <h2>Contact Information</h2>
+                <h2 style="font-size: 22px;">Contact Information</h2> 
                 <p>Get in touch with us:</p>
                 <p>Email: info@speedwheels.com</p>
                 <p>Phone: 123-456-7890</p>
