@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SpeedWheels - Vehicles</title>
+    <link rel="icon" href="../images/carlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <style>
+        header {
+            background-image: url('../images/car5.jpg');
+            height: 40%;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center align content */
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .car-details {
+            width: 100%; /* Full width for responsiveness */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center align cards */
+        }
+
+        .card {
+            width: 45%; /* Adjusted width for car details cards */
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            text-align: left; /* Ensure text alignment is left */
+        }
+
+        .card h3 {
+            font-family: calibri;
+            font-size: 24px; 
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-family: calibri;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .card .car-image {
+            width: 100%; /* Full width for image */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .card .car-price {
+            font-size: 22px; 
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card .additional-images {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card .additional-images img {
+            width: calc(25% - 10px); /* Adjusted width for four images with spacing */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buy-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 12px 24px; 
+            text-align: center;
+            text-decoration: none;
+            display: block; /* Change to block for centering */
+            font-size: 18px;
+            margin: 10px auto; /* Center the button horizontally */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 16px; /* Increased font size */
+            color: #666;
+        }
+
+        /* Additional styling for responsiveness */
+        @media (max-width: 768px) {
+            .card {
+                width: 90%; /* Adjusted width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav" style="color:#333a;">
+        <a href="index.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="search.html">Search</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <h3 style="font-family:calibri; font-size:64px;">Our Vehicles</h3> 
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Car Details -->
+        <div class="car-details">
+            <!-- Example card for each vehicle -->
+            <div class="card">
+                <div class="car-price" style="color:red;">Rs.3,000,000</div>
+                <h3>Honda N-WGN</h3>
+                <p>Year: 2018</p>
+                <p>Mileage: 20,000 km</p>
+                <p>Body Type: Wagon</p>
+                <p>Fuel Type: Petrol</p>
+                <p class="car-location">Location: Kandy</p> 
+                <div class="additional-images">
+                    <img src="../images/searchhond1.jpg" alt="Additional Image 1">
+                    <img src="../images/searchhond2.jpg" alt="Additional Image 2">
+                    <img src="../images/searchhond3.jpg" alt="Additional Image 3">
+                </div>
+                <a href="car1.html" class="buy-button">More Details</a>
+                <div class="card-footer">
+                    <span>Posted: 2024-06-18</span>
+                    <span style="color:green;">Verified</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="car-price" style="color:red;">Rs.2,000,000</div>
+                <h3>Nissan Sunny</h3>
+                <p>Year: 2003</p>
+                <p>Mileage: 140,000 km</p>
+                <p>Body Type: Sedan</p>
+                <p>Fuel Type: Petrol</p>
+                <p class="car-location">Location: Colombo</p> 
+                <div class="additional-images">
+                    <img src="../images/nissansunn1.jpg" alt="Additional Image 1">
+                    <img src="../images/nissansunn2.jpg" alt="Additional Image 2">
+                    <img src="../images/nissansunn3.jpg" alt="Additional Image 3">
+                </div>
+                <a href="car2.html" class="buy-button">More Details</a>
+                <div class="card-footer">
+                    <span>Posted: 2024-06-18</span>
+                    <span style="color:green;">Verified</span>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed -->
+        </div>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <section id="contact-information">
+                <h2 style="font-size: 22px;">Contact Information</h2> 
+                <p>Get in touch with us:</p>
+                <p>Email: info@speedwheels.com</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Address: 123 Main Street, Sri Lanka</p>
+            </section>
+            <p>&copy; Untitled. All rights reserved.</p>
+            <p>Design: SPW Software</p>
+        </div>
+    </footer>
+</body>
+</html>
